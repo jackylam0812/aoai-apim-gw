@@ -91,14 +91,6 @@ python deploy.py
 - 订阅密钥（用于API调用）
 - 服务ID
 
-### 4. 测试负载均衡
-
-使用提供的测试脚本验证负载均衡功能：
-
-```bash
-# 修改 request.py 中的 URL 和 API Key
-python request.py
-```
 
 ## 📁 项目结构
 
@@ -108,7 +100,6 @@ AOAI-APIM-LB/
 ├── policy.xml          # APIM 策略配置
 ├── params.json         # 部署参数（自动生成）
 ├── deploy.py           # 部署脚本
-├── request.py          # 测试脚本
 ├── utils.py            # 工具函数
 └── README.md           # 项目说明文档
 ```
