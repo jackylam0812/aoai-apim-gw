@@ -71,7 +71,7 @@ openai_resources = [
 openai_deployment_name = "gpt-4.1-api"
 openai_model_name = "gpt-4.1"
 openai_model_version = "2025-04-14"
-openai_model_capacity = 500  # TPM (Tokens Per Minute)
+openai_model_capacity = 500  # TPM (Tokens Per Minute， 500即分配500K TPM)
 openai_model_sku = 'GlobalStandard'  # 或 'Standard'
 openai_api_version = "2024-10-21"
 ```
