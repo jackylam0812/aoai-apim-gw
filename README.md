@@ -162,13 +162,6 @@ openai_resources = [
 
 ## 📊 监控和诊断
 
-### 查看负载均衡效果
-
-测试脚本 `request.py` 会显示：
-- 响应时间
-- 请求状态码
-- 后端区域信息 (`x-ms-region` 头)
-- Token 使用情况
 
 ### Azure 门户监控
 
