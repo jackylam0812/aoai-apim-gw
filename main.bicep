@@ -26,7 +26,7 @@ var updatedPolicyXml = replace(policyXml, '{backend-id}', (length(openAIConfig) 
 // ------------------
 
 // 1. API Management
-module apimModule '../../modules/apim/v1/apim.bicep' = {
+module apimModule './apim.bicep' = {
   name: 'apimModule'
   params: {
     apimSku: apimSku
@@ -34,7 +34,7 @@ module apimModule '../../modules/apim/v1/apim.bicep' = {
 }
 
 // 2. Cognitive Services
-module openAIModule '../../modules/cognitive-services/v1/openai.bicep' = {
+module openAIModule './openai.bicep' = {
   name: 'openAIModule'
   params: {
     openAIConfig: openAIConfig
@@ -48,7 +48,7 @@ module openAIModule '../../modules/cognitive-services/v1/openai.bicep' = {
 }
 
 // 3. APIM OpenAI API
-module openAIAPIModule '../../modules/apim/v1/openai-api.bicep' = {
+module openAIAPIModule './openai-api.bicep' = {
   name: 'openAIAPIModule'
   params: {
     policyXml: updatedPolicyXml
